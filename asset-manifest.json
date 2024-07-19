@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/focuss/static/css/main.96ae50da.css",
-    "main.js": "/focuss/static/js/main.4c358ac4.js",
+    "main.css": "/focuss/static/css/main.bbc59996.css",
+    "main.js": "/focuss/static/js/main.e64ef207.js",
     "static/js/453.8c20e05c.chunk.js": "/focuss/static/js/453.8c20e05c.chunk.js",
     "static/media/focusLens.jpg": "/focuss/static/media/focusLens.e06f2715546829c797e6.jpg",
     "static/media/logo.jpg": "/focuss/static/media/logo.5bb12fbd630e3d2d4f92.jpg",
     "index.html": "/focuss/index.html",
-    "main.96ae50da.css.map": "/focuss/static/css/main.96ae50da.css.map",
-    "main.4c358ac4.js.map": "/focuss/static/js/main.4c358ac4.js.map",
+    "main.bbc59996.css.map": "/focuss/static/css/main.bbc59996.css.map",
+    "main.e64ef207.js.map": "/focuss/static/js/main.e64ef207.js.map",
     "453.8c20e05c.chunk.js.map": "/focuss/static/js/453.8c20e05c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.96ae50da.css",
-    "static/js/main.4c358ac4.js"
+    "static/css/main.bbc59996.css",
+    "static/js/main.e64ef207.js"
   ]
 }
