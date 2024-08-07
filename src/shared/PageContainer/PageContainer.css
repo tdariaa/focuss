@@ -1,0 +1,23 @@
+.pageContainer {
+  --s: 25px;
+  --t: 2px;
+  --g: 10px;
+
+  width: 90%;
+  height: 90%;
+  padding: calc(var(--g) + var(--t));
+  outline: var(--t) solid rgba(0, 0, 0, 0.5);
+  outline-offset: calc(-1 * var(--t));
+  -webkit-mask:
+    conic-gradient(at var(--s) var(--s), #0000 75%, #000 0) 0 0 /
+      calc(100% - var(--s)) calc(100% - var(--s)),
+    linear-gradient(#000 0 0) content-box;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}

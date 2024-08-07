@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Magistral";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local("Magistral-Light"),
+    url("./fonts/Magistral-Light.woff2") format("woff2"),
+    url("./fonts/Magistral-Light.woff") format("woff"),
+    url("./fonts/Magistral-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Magistral";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local("Magistral Bold"),
+    local("Magistral-Bold"),
+    url("./fonts/Magistral-Bold.woff2") format("woff2"),
+    url("./fonts/Magistral-Bold.woff") format("woff"),
+    url("./fonts/Magistral-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Magistral";
+  src:
+    local("Magistral ExtraBold"),
+    local("Magistral-ExtraBold"),
+    url("fonts/Magistral-ExtraBold.woff2") format("woff2"),
+    url("fonts/Magistral-ExtraBold.woff") format("woff"),
+    url("fonts/Magistral-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Magistral";
+  src:
+    local("Magistral Medium"),
+    local("Magistral-Medium"),
+    url("fonts/Magistral-Medium.woff2") format("woff2"),
+    url("fonts/Magistral-Medium.woff") format("woff"),
+    url("fonts/Magistral-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Magistral";
+  src:
+    local("Magistral Book"),
+    local("Magistral-Book"),
+    url("fonts/Magistral-Book.woff2") format("woff2"),
+    url("fonts/Magistral-Book.woff") format("woff"),
+    url("fonts/Magistral-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

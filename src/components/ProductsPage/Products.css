@@ -1,0 +1,10 @@
+.productsContainer {
+  width: 90%;
+  height: 100vh;
+  position: relative;
+}
+
+.filterRadio {
+  color: black;
+  font-size: 12px;
+}

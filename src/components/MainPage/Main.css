@@ -1,0 +1,91 @@
+.mainContainer {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.focusLens {
+  background-image: url("../../images/focusLens.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 620px;
+  height: 620px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -70%);
+}
+
+.circleSml {
+  width: 505px;
+  height: 505px;
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid black;
+  z-index: 2;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -59%);
+}
+
+.circleLrg {
+  width: 611px;
+  height: 611px;
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid black;
+  z-index: 2;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -52%);
+}
+
+.logoContainer {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  transform: translate(0%, 70%);
+}
+
+.logoImg {
+  width: 760px;
+  height: 181px;
+  background-image: url("../../images/logo.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.logoTextLeft {
+  font-weight: normal;
+  font-size: 30px;
+  margin: 0;
+
+  align-self: flex-start;
+}
+.logoTextRight {
+  font-weight: normal;
+  font-size: 30px;
+  margin: 0;
+
+  align-self: flex-end;
+}
