@@ -30,7 +30,6 @@ export const getCategoryItems = (
   products: any[] | undefined,
   categories: Array<string>
 ) => {
-  // let result;
   let sorted = [];
   let result = new Map();
   let d;

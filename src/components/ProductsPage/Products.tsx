@@ -25,51 +25,25 @@ export const Products = () => {
   );
 
   const [checkboxValues, setCheckboxValues] = useState<any>(categoryProducts);
-  // console.log("category : ", category);
 
   const filteCategoriesrData = getFilterCategories(
     categoryProducts,
     Object.keys(CategoriesName)
   );
-  // const categoryItems = getInitialValues(categoryProducts);
+
   const categoryItems = getInitialValues(
     Object.keys(CategoriesName) as CategoriesType
   );
-
-  // console.log(
-  //   // categoryProducts,
-  //   // filteCategoriesrData,
-  //   // Object.keys(CategoriesName)
-  //   categoryItems
-  // );
-
-  // const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-  //   e.preventDefault();
-  //   console.log("SUBMIT!!!", e.target);
-  // };
-
-  // const filterss = (data, values) => {
-  //   return data.filter((item) => item.)
-  // }
-
-  // console.log(filterss);
-
-  // const filterData = useMemo(
-  //   () => filterProducts(productsData, checkboxValues),
-  //   [checkboxValues, productsData]
-  // );
 
   const formik = useFormik({
     initialValues: categoryItems,
     onSubmit: (values) => {
       console.log(values);
-      // setCheckboxValues(values);
       setCheckboxValues(
         categoryProducts.filter((item: any) => {
           let isValid = true;
 
           for (let key in values) {
-            // eslint-disable-next-line @typescript-eslint/no-unused-expressions
             isValid =
               isValid &&
               (values[key as keyof typeof values]
@@ -82,46 +56,56 @@ export const Products = () => {
       );
     },
   });
+  console.log(formik);
 
   return (
     <>
       <div className="productsContainer">
-        <button onClick={() => navigate(-1)}>Back</button>
-        <button
-          onClick={() => {
-            setIsVisible((value) => !value);
-            setCheckboxValues(categoryProducts);
-            formik.resetForm();
-          }}
-        >
-          click
-        </button>
+        <div className="buttonContainer">
+          <button onClick={() => navigate(-1)} className="submitButton">
+            Назад
+          </button>
+          <button
+            onClick={() => {
+              setIsVisible((value) => !value);
+              setCheckboxValues(categoryProducts);
+              formik.resetForm();
+            }}
+            className="submitButton submitButton-last"
+          >
+            {isVisible ? "Закрыть" : "Фильтр"}
+          </button>
+        </div>
         {isVisible && (
-          <form onSubmit={formik.handleSubmit}>
-            <fieldset>
-              {filteCategoriesrData.map((ctgr) => (
-                <>
-                  <p>{CategoriesName[ctgr.filterCategory]}</p>
+          <form onSubmit={formik.handleSubmit} className="filterForm">
+            {filteCategoriesrData.map((ctgr) => (
+              <div className="filterContainer">
+                <p className="filterTitle">
+                  {CategoriesName[ctgr.filterCategory]}
+                </p>
+                <fieldset className="filterWrapper">
                   {ctgr.data.map((item) => (
-                    <label className="filterRadio">
+                    <label className="filterRadioLabel">
                       <input
                         key={`${ctgr.filterCategory}${item}`}
                         id={item}
                         type="radio"
                         value={item}
-                        // value={item}
                         name={ctgr.filterCategory}
-                        // name={item}
                         className="filterRadio"
                         onChange={formik.handleChange}
                       />
+                      <div className="dot"></div>
                       {item}
                     </label>
                   ))}
-                </>
-              ))}
-            </fieldset>
-            <button type="submit">Submit!</button>
+                </fieldset>
+              </div>
+            ))}
+
+            <button type="submit" className="submitButton">
+              Искать
+            </button>
           </form>
         )}
         <ProductsCategory data={checkboxValues} />
