@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/focuss/static/css/main.829f2c0d.css",
-    "main.js": "/focuss/static/js/main.c71a4c38.js",
+    "main.js": "/focuss/static/js/main.bcd6954c.js",
     "static/js/453.8c20e05c.chunk.js": "/focuss/static/js/453.8c20e05c.chunk.js",
     "static/media/focusLens.jpg": "/focuss/static/media/focusLens.e06f2715546829c797e6.jpg",
     "static/media/logo.jpg": "/focuss/static/media/logo.5bb12fbd630e3d2d4f92.jpg",
     "index.html": "/focuss/index.html",
     "main.829f2c0d.css.map": "/focuss/static/css/main.829f2c0d.css.map",
-    "main.c71a4c38.js.map": "/focuss/static/js/main.c71a4c38.js.map",
+    "main.bcd6954c.js.map": "/focuss/static/js/main.bcd6954c.js.map",
     "453.8c20e05c.chunk.js.map": "/focuss/static/js/453.8c20e05c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.829f2c0d.css",
-    "static/js/main.c71a4c38.js"
+    "static/js/main.bcd6954c.js"
   ]
 }
