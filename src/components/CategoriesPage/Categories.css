@@ -1,0 +1,91 @@
+.categoriesContainer {
+  width: 80%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 38px;
+  margin: 0;
+  font-weight: bold;
+  padding: 50px 0 20px;
+  align-self: flex-start;
+}
+
+.info {
+  font-size: 28px;
+  margin: 0;
+  text-align: justify;
+  padding-bottom: 50px;
+}
+
+.focusContainer {
+  --s: 40px;
+  --t: 3px;
+  --g: 10px;
+
+  padding: calc(var(--g) + var(--t));
+  outline: var(--t) solid #e65d18;
+  outline-offset: calc(-1 * var(--t));
+  -webkit-mask: conic-gradient(at var(--s) var(--s), #0000 75%, #000 0) 0 0 /
+      calc(100% - var(--s)) calc(100% - var(--s)),
+    linear-gradient(#000 0 0) content-box;
+  transition: 0.4s;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.focusContainer:hover {
+  outline-offset: calc(var(--g) / -1);
+}
+
+.categoriesItems {
+  max-width: 350px;
+  width: 100%;
+  height: 250px;
+  background-color: rgb(0, 0, 51);
+  border-radius: 5%;
+}
+
+.itemTitle {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+}
+
+.itemInfo {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.itemPicture {
+  width: 55%;
+  height: 200px;
+  background-color: #1c3c5b;
+  border-radius: 5%;
+}
+
+.itemButton {
+  background-color: #e65d18;
+  border: 0px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #e65d18;
+  cursor: pointer;
+}
+
+.buttonText {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  color: white;
+  font-size: 18px;
+  margin: 0;
+}

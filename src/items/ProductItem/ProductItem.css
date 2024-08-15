@@ -1,0 +1,57 @@
+.productItemContainer {
+  color: white;
+  width: 400px;
+  height: 200px;
+  background-color: #1c3c5b;
+  border-radius: 3%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.productItemTitle {
+  font-size: 32px;
+  margin: 0;
+  font-weight: bold;
+  align-self: left;
+  padding-bottom: 20px;
+}
+
+.productItemInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.productItemImg {
+  background-image: url("../../images/productItemCamera.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 120px;
+}
+
+.productItemСharacteristics {
+  width: 80%;
+}
+.productItemPoint {
+  text-align: left;
+  list-style-type: disc;
+  font-size: 20px;
+}
+
+.productItemMore {
+  background-color: #e65d18;
+  border: 0px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 2px #e65d18;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 10px;
+  padding: 5px 20px;
+}

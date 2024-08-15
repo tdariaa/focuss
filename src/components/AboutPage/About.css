@@ -1,0 +1,78 @@
+.aboutContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: calc((1475 / 1920) * 100%);
+  width: max-content;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 100px;
+  padding-bottom: 60px;
+}
+.comtainerInfo {
+  font-size: 10px;
+  width: 50%;
+  margin: 0;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.containerPhoto {
+  width: 475px;
+  padding: 5px;
+  box-sizing: border-box;
+  position: relative;
+}
+.aboutPhoto {
+  width: 100%;
+  object-fit: cover;
+  font-size: 16px;
+}
+
+.aboutPhoto {
+  --s: 40px;
+  --t: 3px;
+  --g: 10px;
+
+  padding: calc(var(--g) + var(--t));
+  outline: var(--t) solid #e65d18;
+  outline-offset: calc(-1 * var(--t));
+  -webkit-mask: conic-gradient(at var(--s) var(--s), #0000 75%, #000 0) 0 0 /
+      calc(100% - var(--s)) calc(100% - var(--s)),
+    linear-gradient(#000 0 0) content-box;
+  transition: 0.4s;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.aboutPhoto:hover {
+  outline-offset: calc(var(--g) / -1);
+}
+
+.title {
+  font-size: 38px;
+  margin: 0;
+  font-weight: bold;
+  padding: 50px 0 20px;
+  align-self: flex-start;
+}
+.aboutInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.info {
+  font-size: 28px;
+  margin: 0;
+}
+.acsent {
+  font-size: 28px;
+  margin: 0;
+  border: 2px solid blue;
+  height: 20%;
+}
