@@ -1,3 +1,10 @@
+.accentInfo {
+  color: #e65d18;
+  font-weight: bold;
+  margin: 0;
+  display: inline;
+}
+
 .aboutContainer {
   height: 100vh;
   display: flex;
@@ -6,14 +13,24 @@
   width: max-content;
   justify-content: center;
 }
-.container {
+
+.titleAbout {
+  font-size: 38px;
+  margin: 0;
+  font-weight: bold;
+  padding: 50px 0 20px;
+  align-self: flex-start;
+  color: #1c3c5b;
+}
+
+.wrapperAboutInfo {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 100px;
-  padding-bottom: 60px;
 }
-.comtainerInfo {
+
+.containerInfo {
   font-size: 10px;
   width: 50%;
   margin: 0;
@@ -22,16 +39,18 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.containerPhoto {
+
+.aboutInfo {
+  font-size: 24px;
+  margin: 0;
+  text-align: justify;
+}
+
+.aboutPhotoWrapper {
   width: 475px;
   padding: 5px;
   box-sizing: border-box;
   position: relative;
-}
-.aboutPhoto {
-  width: 100%;
-  object-fit: cover;
-  font-size: 16px;
 }
 
 .aboutPhoto {
@@ -39,6 +58,9 @@
   --t: 3px;
   --g: 10px;
 
+  width: 100%;
+  object-fit: cover;
+  font-size: 16px;
   padding: calc(var(--g) + var(--t));
   outline: var(--t) solid #e65d18;
   outline-offset: calc(-1 * var(--t));
@@ -51,28 +73,4 @@
 }
 .aboutPhoto:hover {
   outline-offset: calc(var(--g) / -1);
-}
-
-.title {
-  font-size: 38px;
-  margin: 0;
-  font-weight: bold;
-  padding: 50px 0 20px;
-  align-self: flex-start;
-}
-.aboutInfo {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-.info {
-  font-size: 28px;
-  margin: 0;
-}
-.acsent {
-  font-size: 28px;
-  margin: 0;
-  border: 2px solid blue;
-  height: 20%;
 }

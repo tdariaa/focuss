@@ -7,6 +7,17 @@ export enum CategoriesName {
   "wifi" = "Wi-Fi",
 }
 
+export enum AllCatigoriesName {
+  "title" = "Наименование модели",
+  "resolution" = "Разрешение",
+  "focalLength" = "Фокусное расстояние",
+  "microphone" = "Микрофон",
+  "dynamic" = "Динамик",
+  "memoryСard" = "Поддержка карты памяти",
+  "wifi" = "Wi-Fi",
+  "property0" = "Свойство 1",
+}
+
 export const productsData = [
   {
     id: "0",

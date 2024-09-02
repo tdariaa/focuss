@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  position: relative;
+  height: 215px;
+  border: #1c3c5b solid 2px;
+}
+
+.photo {
+  object-fit: cover;
+}
+
+.textWrapper {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 24px;
+  padding: 0 35px 0;
+}
+
+.title {
+  margin: 0;
+  font-size: 26px;
+  color: #1c3c5b;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.info {
+  margin: 0;
+  text-align: justify;
+  padding-bottom: 10px;
+}
+
+.numberWrapper {
+  display: flex;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  background-image: url("../../../images/contactTelephoneIcon.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  background-size: contain;
+}
+
+.contact {
+  margin: 0;
+}

@@ -1,23 +1,30 @@
-import "./About.css";
+import s from "./About.module.scss";
 
 import AboutPhoto from "src/images/AboutPhoto.png";
 
 export const About = () => (
-  <div className="aboutContainer" id="about">
-    <h1 className="title">О нас</h1>
-    <div className="container">
-      <div className="comtainerInfo">
-        <p className="info">
-          Как принято считать, многие известные личности лишь добавляют
-          фракционных разногласий и объективно рассмотрены соответствующими
-          инстанциями. Вот вам яркий пример современных тенденций — базовый
-          вектор развития однозначно фиксирует необходимость распределения
-          внутренних резервов и ресурсов.
-        </p>
-        <div className="acsent">Акцентная информация о компании</div>
+  <div className={s.aboutContainer} id="about">
+    <h1 className={s.titleAbout}>О нас</h1>
+    <div className={s.wrapperAboutInfo}>
+      <div className={s.containerInfo}>
+        <div className={s.aboutInfo}>
+          <p className={s.accentInfo}>FOCUS</p> - это молодой, но яркий и
+          амбициозный отечественный производитель систем контроля безопасности и
+          видеонаблюдения. Его появлению способствовал передовой опыт разработки
+          надежных сервисов и технологий, учитывающих потребности местного рынка
+          и адаптированных для использования в его условиях. Наши камеры и
+          видеорегистраторы просты в установке и настройке: с ними Вы
+          почувствуете себя настоящим профессионалом, сможете доступно и выгодно
+          обеспечить необходимый уровень безопасности. В Вашем распоряжении
+          будут все необходимые инструменты: от интуитивно понятного мобильного
+          приложения до современных интеллектуальных алгоритмов. FOCUS - это
+          современные удобные решения с широким спектром технических
+          возможностей. Присоединяетесь к нам, оставайтесь с нами, будьте в
+          фокусе!
+        </div>
       </div>
-      <div className="containerPhoto">
-        <img src={AboutPhoto} alt="" className="aboutPhoto" />
+      <div className={s.aboutPhotoWrapper}>
+        <img src={AboutPhoto} alt="" className={s.aboutPhoto} />
       </div>
     </div>
   </div>
