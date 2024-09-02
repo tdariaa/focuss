@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/focuss/static/css/main.905a7675.css",
-    "main.js": "/focuss/static/js/main.ba02fa1a.js",
+    "main.css": "/focuss/static/css/main.3c37b873.css",
+    "main.js": "/focuss/static/js/main.8e38280c.js",
     "static/js/453.8c20e05c.chunk.js": "/focuss/static/js/453.8c20e05c.chunk.js",
+    "static/media/B4WFH_manual.pdf": "/focuss/static/media/B4WFH_manual.33554a6e94f5394da7f8.pdf",
+    "static/media/NVR3009S1 backside.png": "/focuss/static/media/NVR3009S1 backside.2d265f486e1ad320672e.png",
     "static/media/focusLens.jpg": "/focuss/static/media/focusLens.e06f2715546829c797e6.jpg",
     "static/media/logo.jpg": "/focuss/static/media/logo.5bb12fbd630e3d2d4f92.jpg",
     "index.html": "/focuss/index.html",
-    "main.905a7675.css.map": "/focuss/static/css/main.905a7675.css.map",
-    "main.ba02fa1a.js.map": "/focuss/static/js/main.ba02fa1a.js.map",
+    "main.3c37b873.css.map": "/focuss/static/css/main.3c37b873.css.map",
+    "main.8e38280c.js.map": "/focuss/static/js/main.8e38280c.js.map",
     "453.8c20e05c.chunk.js.map": "/focuss/static/js/453.8c20e05c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.905a7675.css",
-    "static/js/main.ba02fa1a.js"
+    "static/css/main.3c37b873.css",
+    "static/js/main.8e38280c.js"
   ]
 }
