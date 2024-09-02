@@ -1,3 +1,5 @@
+import { CommandInfoCard } from "src/view/molecules";
+import { ContactCard } from "src/view/molecules";
 import "./Contacts.css";
 
 import photo from "src/images/AboutPhoto.png";
@@ -17,28 +19,24 @@ export const Contacts = () => (
       <div className="contactsTableCol">
         <h3 className="contactsTableTitle">Связаться с нами</h3>
         {contactsData.map((item) => (
-          <div className="contactItem" key={item.id}>
-            <div className="contactsText">
-              <p className="contactsName">{item.name}</p>
-              <p className="contactsLink">{item.link}</p>
-            </div>
-          </div>
+          <ContactCard key={item.id} title={item.name} link={item.link} />
         ))}
       </div>
       <div className="contactsTableCol">
         <h3 className="contactsTableTitle">Команда</h3>
-        <div className="contactsInfo">
-          <img src={photo} alt="" className="contactsInfoPhoto" />
-          <div className="contactsInfoText">
-            <p className="contactsInfoName">Иван Иванов</p>
-            <p className="contactsInfoSubtitle">Важная информация для связи</p>
-            <p className="contactsInfoNumber">+7 800-555-35-35</p>
-          </div>
-        </div>
+        <CommandInfoCard
+          photo={photo}
+          title="Иван Иванов"
+          info="Важная информация для связи"
+          contact="+7 800-555-35-35"
+        />
         <h3 className="contactsTableTitle">Адрес</h3>
-        <div className="contactsInfo">
-          <img src={photo} alt="" className="contactsInfoPhoto" />
-        </div>
+        <CommandInfoCard
+          photo={photo}
+          title="Санкт-Петербург"
+          info="Невский проспект д11 к11"
+          contact="Ссылка яндекс карты"
+        />
       </div>
     </div>
   </div>

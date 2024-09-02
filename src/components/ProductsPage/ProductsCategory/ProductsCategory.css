@@ -17,7 +17,7 @@
   width: calc((1140 / 1280) * 100%);
   display: grid;
   grid-template-columns: repeat(auto-fit, 460px);
-  grid-template-rows: repeat(auto-fit, 260px);
+  grid-template-rows: repeat(auto-fit, 300px);
   column-gap: 30px;
   row-gap: 43px;
   justify-content: center;
@@ -28,8 +28,8 @@
 @media screen and (max-width: 900px) {
   .productsItems {
     width: calc((708 / 768) * 100%);
-    grid-template-rows: repeat(auto-fit, 231px);
-    grid-template-columns: repeat(auto-fit, 339px);
+    grid-template-rows: repeat(auto-fit, 360px);
+    /* grid-template-columns: repeat(auto-fit, 339px); */
     padding-left: 0;
     padding-right: 0;
     row-gap: 47px;
@@ -41,7 +41,7 @@
     display: grid;
     width: calc((300 / 320) * 100%);
     padding: 40px 0 0;
-    grid-template-rows: repeat(auto-fit, 199px);
+    /* grid-template-rows: repeat(auto-fit, 400px); */
     grid-template-columns: minmax(100px, 300px);
     gap: 39px;
   }
