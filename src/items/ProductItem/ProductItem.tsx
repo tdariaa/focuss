@@ -1,6 +1,6 @@
 import { SyntheticEvent, useState } from "react";
 import "./ProductItem.css";
-import { ProductModal } from "src/items/ProductModal";
+// import { ProductModal } from "src/items/ProductModal";
 import { AllCatigoriesName } from "src/utils";
 
 export const ProductItem = ({ item }: any) => {
@@ -59,9 +59,9 @@ export const ProductItem = ({ item }: any) => {
           Подробнее
         </button>
       </div>
-      {isVisible && (
+      {/* {isVisible && (
         <ProductModal item={item} visibleHandler={visibleChangeHandler} />
-      )}
+      )} */}
     </>
   );
 };
