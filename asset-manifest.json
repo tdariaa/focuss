@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/focuss/static/css/main.1f2074b6.css",
-    "main.js": "/focuss/static/js/main.2639d652.js",
+    "main.js": "/focuss/static/js/main.6310b81e.js",
     "static/js/453.8c20e05c.chunk.js": "/focuss/static/js/453.8c20e05c.chunk.js",
     "static/media/IP_Camera_User_Manual_RUS_LOGO.pdf": "/focuss/static/media/IP_Camera_User_Manual_RUS_LOGO.33ddd3e3a02634c8278d.pdf",
     "static/media/FC-NVR9-S1.png": "/focuss/static/media/FC-NVR9-S1.92e774b1fc72c2164e2a.png",
@@ -105,11 +105,11 @@
     "static/media/Magistral-Light.woff2": "/focuss/static/media/Magistral-Light.8e7f31433e166a03080b.woff2",
     "index.html": "/focuss/index.html",
     "main.1f2074b6.css.map": "/focuss/static/css/main.1f2074b6.css.map",
-    "main.2639d652.js.map": "/focuss/static/js/main.2639d652.js.map",
+    "main.6310b81e.js.map": "/focuss/static/js/main.6310b81e.js.map",
     "453.8c20e05c.chunk.js.map": "/focuss/static/js/453.8c20e05c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1f2074b6.css",
-    "static/js/main.2639d652.js"
+    "static/js/main.6310b81e.js"
   ]
 }
