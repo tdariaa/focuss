@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/focuss/static/css/main.8e716fb7.css",
-    "main.js": "/focuss/static/js/main.957255ed.js",
+    "main.css": "/focuss/static/css/main.dca55c6e.css",
+    "main.js": "/focuss/static/js/main.717ac1c7.js",
     "static/js/453.8c20e05c.chunk.js": "/focuss/static/js/453.8c20e05c.chunk.js",
     "static/media/FC-NVR9-S1.png": "/focuss/static/media/FC-NVR9-S1.92e774b1fc72c2164e2a.png",
     "static/media/X86 BACK.png": "/focuss/static/media/X86 BACK.521cdc92463c0a633620.png",
@@ -114,14 +114,16 @@
     "static/media/Magistral-ExtraBold.woff2": "/focuss/static/media/Magistral-ExtraBold.be05fff81774ee937e53.woff2",
     "static/media/Magistral-Medium.woff2": "/focuss/static/media/Magistral-Medium.118ee451f421f04876cf.woff2",
     "static/media/Magistral-Light.woff2": "/focuss/static/media/Magistral-Light.8e7f31433e166a03080b.woff2",
+    "static/media/videoregistr.jpg": "/focuss/static/media/videoregistr.1fdb10c0329de003c2ed.jpg",
+    "static/media/videocamera.jpg": "/focuss/static/media/videocamera.6d622d006d05c28c3eee.jpg",
     "static/media/close-square-svgrepo-com.svg": "/focuss/static/media/close-square-svgrepo-com.0f13ac5c7bc49f93996b.svg",
     "index.html": "/focuss/index.html",
-    "main.8e716fb7.css.map": "/focuss/static/css/main.8e716fb7.css.map",
-    "main.957255ed.js.map": "/focuss/static/js/main.957255ed.js.map",
+    "main.dca55c6e.css.map": "/focuss/static/css/main.dca55c6e.css.map",
+    "main.717ac1c7.js.map": "/focuss/static/js/main.717ac1c7.js.map",
     "453.8c20e05c.chunk.js.map": "/focuss/static/js/453.8c20e05c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e716fb7.css",
-    "static/js/main.957255ed.js"
+    "static/css/main.dca55c6e.css",
+    "static/js/main.717ac1c7.js"
   ]
 }
