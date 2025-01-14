@@ -1,0 +1,101 @@
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+}
+
+.modalContainer {
+  position: relative;
+  width: 50%;
+  max-width: 600px;
+  display: flex;
+  z-index: 3;
+  border-radius: 7px;
+  flex-direction: column;
+  background-color: white;
+  padding: 40px;
+  margin: 40px 0;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+.closeButton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../../images/close-square-svgrepo-com.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  background-size: contain;
+  background-color: transparent;
+  height: 30px;
+  width: 30px;
+  border: none;
+  cursor: pointer;
+  margin: 15px;
+}
+
+.titleModal {
+  font-size: 24px;
+  color: black;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.propertyTable {
+  align-self: center;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.5);
+}
+
+.propertyTitle,
+.propertyInfo {
+  width: 50%;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 10px;
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
+  overflow-wrap: break-word;
+}
+
+.propertyTitle {
+  font-size: 16px;
+  color: #1c3c5b;
+  font-weight: bold;
+}
+
+.propertyMoreInfo {
+  text-align: justify;
+}
+
+.downloadLink {
+  color: #1c3c5b;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .propertyTable {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.5);
+  }
+
+  .propertyTitle,
+  .propertyInfo {
+    border: none;
+    padding: 10px 0 0;
+    width: max-content;
+  }
+}

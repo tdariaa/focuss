@@ -47,7 +47,7 @@
 }
 
 .aboutPhotoWrapper {
-  width: 475px;
+  width: calc((475 / 1280) * 100vw);
   padding: 5px;
   box-sizing: border-box;
   position: relative;
@@ -73,4 +73,31 @@
 }
 .aboutPhoto:hover {
   outline-offset: calc(var(--g) / -1);
+}
+
+@media screen and (max-width: 1280px) {
+  .wrapperAboutInfo {
+    // flex-direction: column-reverse;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .containerInfo {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .aboutContainer {
+    height: max-content;
+  }
+  .aboutInfo {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wrapperAboutInfo {
+    flex-direction: column-reverse;
+  }
 }

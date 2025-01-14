@@ -1,0 +1,108 @@
+.productItemContainer {
+  color: white;
+  width: 400px;
+  height: 250px;
+  background-color: #1c3c5b;
+  border-radius: 3%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.productItemTitle {
+  font-size: 26px;
+  margin: 0;
+  font-weight: bold;
+  align-self: left;
+  padding-bottom: 20px;
+}
+
+.productItemInfo {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  justify-content: flex-start;
+  width: 100%;
+  gap: 20px;
+}
+
+.productItemImg {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 120px;
+}
+
+.productItemImgContainer {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: max-content;
+  /* height: 120px; */
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.productItemСharacteristics {
+  max-width: 80%;
+  width: 60%;
+  padding: 0;
+}
+.productItemPoint {
+  text-align: left;
+  list-style: none;
+  font-size: 14px;
+  /* padding-bottom: 5px; */
+  display: flex;
+
+  /* height: 15px; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* align-items: flex-end; */
+  align-items: center;
+  border-bottom: 0.5px solid rgb(255, 255, 255, 0.1);
+}
+.productItemPoint:last-of-type {
+  /* color: #e65d18; */
+  text-shadow: 0 0 1em #e65d18, 0 0 0.2em #e65d18;
+}
+
+.productItemDescription {
+  margin: 0;
+  padding-left: 5px;
+  height: 17px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 50%;
+}
+
+.productItemSubtitle {
+  font-weight: 700;
+  margin: 0;
+  display: inline;
+  width: max-content;
+  max-width: 50%;
+  overflow-wrap: break-word;
+}
+
+.productItemMore {
+  background-color: #e65d18;
+  border: 0px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 2px #e65d18;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 10px;
+  padding: 5px 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .productItemContainer {
+    height: 300px;
+  }
+}

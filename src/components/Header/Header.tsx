@@ -4,21 +4,21 @@ import "./Header.css";
 
 export const Header = () => (
   <header className="header">
-    FOCUS
+    FOCUSENSE
     <ul className="header__links">
       <li className="header__link">
         <HashLink className="header__link_item" to="#home">
-          HOME
+          ГЛАВНАЯ
         </HashLink>
       </li>
       <li className="header__link">
         <HashLink className="header__link_item" to="#products">
-          PRODUCTS
+          ТОВАРЫ
         </HashLink>
       </li>
       <li className="header__link">
         <HashLink className="header__link_item" to="#contacts">
-          CONTACTS
+          КОНТАКТЫ
         </HashLink>
       </li>
     </ul>

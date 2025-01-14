@@ -1,5 +1,9 @@
+@import url(./vendor/fonts.css);
 :root {
   scroll-behavior: smooth;
+  scrollbar-color: #e65d18 #ffffff00;
+  scrollbar-width: auto;
+  scrollbar-width: thin;
 }
 
 .App {
@@ -25,6 +29,7 @@
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
+  min-height: max-content;
   display: flex;
   flex-direction: column;
   align-items: center;

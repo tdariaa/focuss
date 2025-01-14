@@ -1,0 +1,58 @@
+.container {
+  width: 100%;
+  min-width: 300px;
+  border: #e65d18 solid 2px;
+  background-image: url("../../images/contactsPlainIcon.jpg");
+  background-position: 20px center;
+  background-repeat: no-repeat;
+  background-size: 70px;
+  padding: 15px 0 15px 130px;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+.wrapperContacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 26px;
+  letter-spacing: 2.5px;
+}
+
+.link {
+  margin: 0;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    padding-left: 100px;
+    min-width: 100px;
+    background-size: 50px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .link {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    padding-left: 80px;
+    background-size: 40px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .link {
+    font-size: 16px;
+  }
+}

@@ -1,14 +1,14 @@
-import { CommandInfoCard } from "src/view/molecules";
-import { ContactCard } from "src/view/molecules";
+import { CommandInfoCard } from "src/components/CommandInfoCard/CommandInfoCard";
+import { ContactCard } from "src/components/ContactCard/ContactCard";
 import "./Contacts.css";
 
-import photo from "src/images/AboutPhoto.png";
+import photo from "src/images/mapicon.jpg";
 
 const contactsData = [
-  { id: "0", name: "Почта", link: "focus@yandex.ru" },
-  { id: "1", name: "Телеграм", link: "@focus" },
-  { id: "2", name: "Whatsapp", link: "+7 800-555-35-35" },
-  { id: "3", name: "Телефон", link: "+7 800-555-35-35" },
+  { id: "0", name: "Почта", link: "focus@focus-cctv.ru" },
+  // { id: "1", name: "Телеграм", link: "@focus" },
+  // { id: "2", name: "Whatsapp", link: "+7 800-555-35-35" },
+  { id: "3", name: "Телефон", link: "+7 (812) 320-23-97" },
 ];
 
 export const Contacts = () => (
@@ -23,19 +23,19 @@ export const Contacts = () => (
         ))}
       </div>
       <div className="contactsTableCol">
-        <h3 className="contactsTableTitle">Команда</h3>
-        <CommandInfoCard
+        {/* <h3 className="contactsTableTitle">Команда</h3> */}
+        {/* <CommandInfoCard
           photo={photo}
           title="Иван Иванов"
           info="Важная информация для связи"
           contact="+7 800-555-35-35"
-        />
+        /> */}
         <h3 className="contactsTableTitle">Адрес</h3>
         <CommandInfoCard
           photo={photo}
           title="Санкт-Петербург"
-          info="Невский проспект д11 к11"
-          contact="Ссылка яндекс карты"
+          info="ул. Комиссара Смирнова д.11 лит. Д"
+          contact=""
         />
       </div>
     </div>

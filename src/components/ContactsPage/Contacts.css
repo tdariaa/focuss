@@ -23,7 +23,6 @@
   align-self: flex-start;
   line-height: 26px;
   letter-spacing: 1.5px;
-
   color: #e65d18;
 }
 
@@ -44,4 +43,32 @@
   margin: 0;
   display: flex;
   justify-content: flex-start;
+}
+
+@media screen and (max-width: 1280px) {
+  .contactsTable {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .contactsTitle,
+  .contactsSubtitle,
+  .contactsTableTitle {
+    font-size: 24px;
+    font-weight: 600;
+    display: block;
+    align-self: center;
+  }
+  .contactsTitle {
+    padding-top: 40px;
+  }
+  .contactsTableCol {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .contactsContainer {
+    height: max-content;
+  }
 }

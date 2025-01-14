@@ -1,0 +1,121 @@
+.mainContainer {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.focusLens {
+  background-image: url("../../images/focusLens.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: calc((620 / 1280) * 100vw);
+  height: calc((620 / 1280) * 100vw);
+  max-width: 620px;
+  max-height: 620px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -70%);
+}
+
+.circleSml {
+  width: calc((505 / 1280) * 100vw);
+  height: calc((505 / 1280) * 100vw);
+
+  max-width: 505px;
+  max-height: 505px;
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid black;
+  z-index: 0;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -59%);
+}
+
+.circleLrg {
+  width: calc((611 / 1280) * 100vw);
+  height: calc((611 / 1280) * 100vw);
+
+  max-width: 611px;
+  max-height: 611px;
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid black;
+  z-index: 0;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -52%);
+}
+
+.logoContainer {
+  max-width: calc((800 / 1280) * 100vw);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  transform: translate(0%, 70%);
+}
+
+.logoImg {
+  /* width: 760px;
+  height: 181px; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: "Panton";
+  font-weight: 1000;
+  font-size: calc((120 / 1280) * 100vw);
+  font-style: normal;
+  color: #1c3c5b;
+  margin: 0;
+}
+
+@media screen and (min-width: 1280px) {
+  .logoImg {
+    font-size: 120px;
+  }
+  .logoContainer {
+    max-width: 800px;
+  }
+}
+
+.logoTextLeft {
+  font-weight: normal;
+  font-size: 30px;
+  margin: 0;
+
+  align-self: flex-start;
+}
+.logoTextRight {
+  font-weight: normal;
+  font-size: 30px;
+  margin: 0;
+
+  align-self: flex-end;
+}
+
+/* .logoo {
+  font-family: "Panton";
+  font-weight: 1000;
+  font-size: 120px;
+  font-style: normal;
+  color: #1c3c5b;
+} */

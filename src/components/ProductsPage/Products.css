@@ -19,6 +19,7 @@
   border: #1c3c5b solid 1px;
   border-radius: 10px;
   margin-top: 25px;
+  accent-color: #e65d18;
 }
 
 .filterContainer {
@@ -37,10 +38,13 @@
 
 .filterWrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   border: none;
+  gap: 20px;
+  width: 100%;
 }
 
 .filterRadioLabel {
@@ -52,6 +56,7 @@
   display: flex;
   justify-content: center;
   cursor: pointer;
+  align-items: center;
 }
 
 .filterRadio {
@@ -59,7 +64,8 @@
   border-radius: 50px;
   display: inline-flex;
   cursor: pointer;
-  margin: 8px 0;
+  /* margin: 8px 0; */
+  margin: 4px;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -68,11 +74,11 @@
   background: #ffffff;
 }
 
-input[type="radio"] {
+input[type="checkbox"] {
   vertical-align: middle;
   width: 20px;
   height: 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   background: none;
   border: 0;
   box-shadow: inset 0 0 0 1px #1c3c5b;
@@ -110,4 +116,8 @@ input[type="radio"] {
 
 .submitButton-last {
   margin-left: 10px;
+}
+
+.filterRange {
+  width: 50%;
 }

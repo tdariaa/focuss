@@ -4,19 +4,27 @@ import {
   getFilterCategories,
   productsData,
   CategoriesName,
-  GetFilterCategoriesType,
-  getCategoryItems,
+  ProductsDataType,
+  // GetFilterCategoriesType,
+  // getCategoryItems,
 } from "src/utils";
-import { useMemo, useRef, useState } from "react";
-import { ProductItem } from "src/items/ProductItem/ProductItem";
+import { useMemo, useState } from "react";
+// import { ProductItem } from "src/items/ProductItem/ProductItem";
 import "./Products.css";
 
-import { ProductsCategory } from "./ProductsCategory/ProductsCategory";
+import { ProductsCategory } from "../ProductsCategory/ProductsCategory";
 import { useFormik } from "formik";
 import { CategoriesType, getInitialValues } from "./utils";
 
+type FilterCriteria<T> = {
+  [K in keyof T]?: T[K] | T[K][];
+};
+
 export const Products = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [minPrice, setMinPrice] = useState(0);
+  const [maxPrice, setMaxPrice] = useState(17843);
+  const [currentPrice, setCurrentPrice] = useState(17843);
   const { category = "" } = useParams();
   const navigate = useNavigate();
   const categoryProducts = useMemo(
@@ -24,7 +32,8 @@ export const Products = () => {
     [category]
   );
 
-  const [checkboxValues, setCheckboxValues] = useState<any>(categoryProducts);
+  const [checkboxValues, setCheckboxValues] =
+    useState<ProductsDataType[]>(categoryProducts);
 
   const filteCategoriesrData = getFilterCategories(
     categoryProducts,
@@ -39,24 +48,31 @@ export const Products = () => {
     initialValues: categoryItems,
     onSubmit: (values) => {
       console.log(values);
+      function filterArray<T>(items: T[], criteria: FilterCriteria<T>): T[] {
+        return items
+          .filter((item: any) => parseInt(item.price) <= currentPrice)
+          .filter((item) =>
+            Object.entries(criteria).every(([key, value]) => {
+              if (Array.isArray(value)) {
+                return (
+                  value.length === 0 || value.includes(item[key as keyof T])
+                );
+              }
+              return (
+                value === "" ||
+                item[key as keyof T] === value ||
+                key === "price"
+              );
+            })
+          );
+      }
       setCheckboxValues(
-        categoryProducts.filter((item: any) => {
-          let isValid = true;
-
-          for (let key in values) {
-            isValid =
-              isValid &&
-              (values[key as keyof typeof values]
-                ? values[key as keyof typeof values] ===
-                  item[key as keyof typeof item]
-                : true);
-          }
-          return isValid ? item : "";
-        })
+        filterArray(categoryProducts, values) as ProductsDataType[]
       );
     },
   });
-  console.log(formik);
+
+  const handleChange = () => {};
 
   return (
     <>
@@ -78,27 +94,48 @@ export const Products = () => {
         </div>
         {isVisible && (
           <form onSubmit={formik.handleSubmit} className="filterForm">
-            {filteCategoriesrData.map((ctgr) => (
-              <div className="filterContainer">
+            {filteCategoriesrData.map((ctgr, i) => (
+              <div className="filterContainer" key={i}>
                 <p className="filterTitle">
                   {CategoriesName[ctgr.filterCategory]}
                 </p>
                 <fieldset className="filterWrapper">
-                  {ctgr.data.map((item) => (
-                    <label className="filterRadioLabel">
+                  {ctgr.data.map((item) =>
+                    item && ctgr.filterCategory !== "price" ? (
+                      <label className="filterRadioLabel" key={item}>
+                        <input
+                          key={`${ctgr.filterCategory}${item}`}
+                          id={item}
+                          type="checkbox"
+                          value={item}
+                          name={ctgr.filterCategory}
+                          className="filterRadio"
+                          onChange={formik.handleChange}
+                        />
+                        <div className="dot"></div>
+                        {item}
+                      </label>
+                    ) : null
+                  )}
+                  {ctgr.filterCategory === "price" ? (
+                    <>
+                      <p>{minPrice}</p>
                       <input
-                        key={`${ctgr.filterCategory}${item}`}
-                        id={item}
-                        type="radio"
-                        value={item}
+                        className="filterRange"
                         name={ctgr.filterCategory}
-                        className="filterRadio"
-                        onChange={formik.handleChange}
+                        onChange={(e) => {
+                          formik.handleChange(e);
+                          setCurrentPrice(e.target.value as unknown as number);
+                        }}
+                        type="range"
+                        id="price"
+                        min={minPrice}
+                        max={maxPrice}
+                        step="100"
                       />
-                      <div className="dot"></div>
-                      {item}
-                    </label>
-                  ))}
+                      <p>{currentPrice}</p>
+                    </>
+                  ) : null}
                 </fieldset>
               </div>
             ))}
@@ -109,6 +146,7 @@ export const Products = () => {
           </form>
         )}
         <ProductsCategory data={checkboxValues} />
+        {/* <ProductsCategory data={categoryProducts} /> */}
       </div>
     </>
   );

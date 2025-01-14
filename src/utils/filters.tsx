@@ -32,7 +32,6 @@ export const getCategoryItems = (
 ) => {
   let sorted = [];
   let result = new Map();
-  let d;
 
   for (let key of categories) {
     if (products) sorted.push(...products.map((p) => p[key]));
@@ -41,7 +40,6 @@ export const getCategoryItems = (
   for (let i = 0; i < sorted.length; i++) {
     result.set(sorted[i], "");
   }
-  d = Object.fromEntries(result);
 
-  return d;
+  return Object.fromEntries(result);
 };
